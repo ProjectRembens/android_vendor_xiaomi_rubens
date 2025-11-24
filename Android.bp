@@ -13884,6 +13884,218 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "rembrandtgc02m1_mipi_raw_IdxMgr",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/rembrandtgc02m1_mipi_raw_IdxMgr.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "rembrandtgc02m1_mipi_raw_tuning",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/rembrandtgc02m1_mipi_raw_tuning.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libmtkcam_ulog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "rembrandtimx582_mipi_raw_IdxMgr",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/rembrandtimx582_mipi_raw_IdxMgr.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "rembrandtimx582_mipi_raw_tuning",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/rembrandtimx582_mipi_raw_tuning.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libmtkcam_ulog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "rembrandtimx596_mipi_raw_IdxMgr",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/rembrandtimx596_mipi_raw_IdxMgr.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "rembrandtimx596_mipi_raw_tuning",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/rembrandtimx596_mipi_raw_tuning.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libmtkcam_ulog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "rembrandts5k4h7_mipi_raw_IdxMgr",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/rembrandts5k4h7_mipi_raw_IdxMgr.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "rembrandts5k4h7_mipi_raw_tuning",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/rembrandts5k4h7_mipi_raw_tuning.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libmtkcam_ulog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "rubensgc02m1_mipi_raw_IdxMgr",
     owner: "xiaomi",
     strip: {
@@ -15152,6 +15364,62 @@ install_symlink {
     soc_specific: true,
     installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/ISP_info.db",
     symlink_target: "/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mt6895/ISP_info.db",
+}
+
+install_symlink {
+    name: "vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_rembrandtgc02m1_mipi_raw_ISP_mapping_db",
+    soc_specific: true,
+    installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/rembrandtgc02m1_mipi_raw/ISP_mapping.db",
+    symlink_target: "/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/rembrandtgc02m1_mipi_raw/mt6895/ISP_mapping.db",
+}
+
+install_symlink {
+    name: "vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_rembrandtgc02m1_mipi_raw_ISP_param_db",
+    soc_specific: true,
+    installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/rembrandtgc02m1_mipi_raw/ISP_param.db",
+    symlink_target: "/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/rembrandtgc02m1_mipi_raw/mt6895/ISP_param.db",
+}
+
+install_symlink {
+    name: "vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_rembrandtimx582_mipi_raw_ISP_mapping_db",
+    soc_specific: true,
+    installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/rembrandtimx582_mipi_raw/ISP_mapping.db",
+    symlink_target: "/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/rembrandtimx582_mipi_raw/mt6895/ISP_mapping.db",
+}
+
+install_symlink {
+    name: "vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_rembrandtimx582_mipi_raw_ISP_param_db",
+    soc_specific: true,
+    installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/rembrandtimx582_mipi_raw/ISP_param.db",
+    symlink_target: "/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/rembrandtimx582_mipi_raw/mt6895/ISP_param.db",
+}
+
+install_symlink {
+    name: "vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_rembrandtimx596_mipi_raw_ISP_mapping_db",
+    soc_specific: true,
+    installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/rembrandtimx596_mipi_raw/ISP_mapping.db",
+    symlink_target: "/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/rembrandtimx596_mipi_raw/mt6895/ISP_mapping.db",
+}
+
+install_symlink {
+    name: "vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_rembrandtimx596_mipi_raw_ISP_param_db",
+    soc_specific: true,
+    installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/rembrandtimx596_mipi_raw/ISP_param.db",
+    symlink_target: "/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/rembrandtimx596_mipi_raw/mt6895/ISP_param.db",
+}
+
+install_symlink {
+    name: "vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_rembrandts5k4h7_mipi_raw_ISP_mapping_db",
+    soc_specific: true,
+    installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/rembrandts5k4h7_mipi_raw/ISP_mapping.db",
+    symlink_target: "/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/rembrandts5k4h7_mipi_raw/mt6895/ISP_mapping.db",
+}
+
+install_symlink {
+    name: "vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_rembrandts5k4h7_mipi_raw_ISP_param_db",
+    soc_specific: true,
+    installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/rembrandts5k4h7_mipi_raw/ISP_param.db",
+    symlink_target: "/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/rembrandts5k4h7_mipi_raw/mt6895/ISP_param.db",
 }
 
 install_symlink {

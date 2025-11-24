@@ -21,6 +21,14 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rubens/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tone/mt6895/ParameterDB_tone.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tone/mt6895/ParameterDB_tone.db \
     vendor/xiaomi/rubens/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/default_sensor/mt6895/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/default_sensor/mt6895/ISP_mapping.db \
     vendor/xiaomi/rubens/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mt6895/ISP_info.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mt6895/ISP_info.db \
+    vendor/xiaomi/rubens/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/rembrandtgc02m1_mipi_raw/mt6895/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/rembrandtgc02m1_mipi_raw/mt6895/ISP_mapping.db \
+    vendor/xiaomi/rubens/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/rembrandtgc02m1_mipi_raw/mt6895/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/rembrandtgc02m1_mipi_raw/mt6895/ISP_param.db \
+    vendor/xiaomi/rubens/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/rembrandtimx582_mipi_raw/mt6895/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/rembrandtimx582_mipi_raw/mt6895/ISP_mapping.db \
+    vendor/xiaomi/rubens/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/rembrandtimx582_mipi_raw/mt6895/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/rembrandtimx582_mipi_raw/mt6895/ISP_param.db \
+    vendor/xiaomi/rubens/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/rembrandtimx596_mipi_raw/mt6895/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/rembrandtimx596_mipi_raw/mt6895/ISP_mapping.db \
+    vendor/xiaomi/rubens/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/rembrandtimx596_mipi_raw/mt6895/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/rembrandtimx596_mipi_raw/mt6895/ISP_param.db \
+    vendor/xiaomi/rubens/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/rembrandts5k4h7_mipi_raw/mt6895/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/rembrandts5k4h7_mipi_raw/mt6895/ISP_mapping.db \
+    vendor/xiaomi/rubens/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/rembrandts5k4h7_mipi_raw/mt6895/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/rembrandts5k4h7_mipi_raw/mt6895/ISP_param.db \
     vendor/xiaomi/rubens/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/rubensgc02m1_mipi_raw/mt6895/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/rubensgc02m1_mipi_raw/mt6895/ISP_mapping.db \
     vendor/xiaomi/rubens/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/rubensgc02m1_mipi_raw/mt6895/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/rubensgc02m1_mipi_raw/mt6895/ISP_param.db \
     vendor/xiaomi/rubens/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/rubensimx582_mipi_raw/mt6895/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/rubensimx582_mipi_raw/mt6895/ISP_mapping.db \
@@ -81,6 +89,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rubens/proprietary/vendor/etc/camera/mibokeh_mt6873_opencl.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mibokeh_mt6873_opencl.bin \
     vendor/xiaomi/rubens/proprietary/vendor/etc/camera/mibokeh_mt6873_parameter.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mibokeh_mt6873_parameter.bin \
     vendor/xiaomi/rubens/proprietary/vendor/etc/camera/quantize_mtk_0.00246_1800-360620_singleinput_bs1_1285.dla:$(TARGET_COPY_OUT_VENDOR)/etc/camera/quantize_mtk_0.00246_1800-360620_singleinput_bs1_1285.dla \
+    vendor/xiaomi/rubens/proprietary/vendor/etc/camera/quantize_mtk_0.00246_1800-360620_singleinput_mdla30.dla:$(TARGET_COPY_OUT_VENDOR)/etc/camera/quantize_mtk_0.00246_1800-360620_singleinput_mdla30.dla \
     vendor/xiaomi/rubens/proprietary/vendor/etc/camera/sceneDetection.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/sceneDetection.xml \
     vendor/xiaomi/rubens/proprietary/vendor/etc/camera/svq_cache:$(TARGET_COPY_OUT_VENDOR)/etc/camera/svq_cache \
     vendor/xiaomi/rubens/proprietary/vendor/etc/camera/video_bokeh_apu_front_20210413.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/video_bokeh_apu_front_20210413.bin \
@@ -100,6 +109,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rubens/proprietary/vendor/etc/cust_color.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cust_color.xml \
     vendor/xiaomi/rubens/proprietary/vendor/etc/cust_silky_brightness.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cust_silky_brightness.xml \
     vendor/xiaomi/rubens/proprietary/vendor/etc/dsi_l11a_38_0a_0a_dsc_cmd_mi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dsi_l11a_38_0a_0a_dsc_cmd_mi.xml \
+    vendor/xiaomi/rubens/proprietary/vendor/etc/dsi_m11r_38_0a_0a_dsc_cmd_mi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dsi_m11r_38_0a_0a_dsc_cmd_mi.xml \
     vendor/xiaomi/rubens/proprietary/vendor/etc/elliptic_sensor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/elliptic_sensor.xml \
     vendor/xiaomi/rubens/proprietary/vendor/etc/init/android.hardware.security.keymint-service.beanpod.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service.beanpod.rc \
     vendor/xiaomi/rubens/proprietary/vendor/etc/init/camerahalserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camerahalserver.rc \
@@ -612,6 +622,14 @@ PRODUCT_PACKAGES += \
     libvainr_model \
     mtk000_mipi_raw_IdxMgr \
     mtk000_mipi_raw_tuning \
+    rembrandtgc02m1_mipi_raw_IdxMgr \
+    rembrandtgc02m1_mipi_raw_tuning \
+    rembrandtimx582_mipi_raw_IdxMgr \
+    rembrandtimx582_mipi_raw_tuning \
+    rembrandtimx596_mipi_raw_IdxMgr \
+    rembrandtimx596_mipi_raw_tuning \
+    rembrandts5k4h7_mipi_raw_IdxMgr \
+    rembrandts5k4h7_mipi_raw_tuning \
     rubensgc02m1_mipi_raw_IdxMgr \
     rubensgc02m1_mipi_raw_tuning \
     rubensimx582_mipi_raw_2_IdxMgr \
@@ -674,6 +692,14 @@ PRODUCT_PACKAGES += \
     vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_default_sensor_ISP_mapping_db \
     vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_default_sensor_ISP_param_db \
     vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_ISP_info_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_rembrandtgc02m1_mipi_raw_ISP_mapping_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_rembrandtgc02m1_mipi_raw_ISP_param_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_rembrandtimx582_mipi_raw_ISP_mapping_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_rembrandtimx582_mipi_raw_ISP_param_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_rembrandtimx596_mipi_raw_ISP_mapping_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_rembrandtimx596_mipi_raw_ISP_param_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_rembrandts5k4h7_mipi_raw_ISP_mapping_db \
+    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_rembrandts5k4h7_mipi_raw_ISP_param_db \
     vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_rubensgc02m1_mipi_raw_ISP_mapping_db \
     vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_rubensgc02m1_mipi_raw_ISP_param_db \
     vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_rubensimx582_mipi_raw_ISP_mapping_db \
