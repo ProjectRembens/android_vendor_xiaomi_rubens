@@ -1,1 +1,4 @@
 *.so filter=lfs diff=lfs merge=lfs -text
+proprietary/vendor/lib64/librelight_only.so filter=lfs diff=lfs merge=lfs -text
+proprietary/vendor/lib64/mt6895/libcameracustom.camera.isp.so filter=lfs diff=lfs merge=lfs -text
+proprietary/vendor/lib64/mt6895/libaibc_tuning.so filter=lfs diff=lfs merge=lfs -text

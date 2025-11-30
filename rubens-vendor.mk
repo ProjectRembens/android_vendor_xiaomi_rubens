@@ -111,15 +111,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rubens/proprietary/vendor/etc/dsi_l11a_38_0a_0a_dsc_cmd_mi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dsi_l11a_38_0a_0a_dsc_cmd_mi.xml \
     vendor/xiaomi/rubens/proprietary/vendor/etc/dsi_m11r_38_0a_0a_dsc_cmd_mi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dsi_m11r_38_0a_0a_dsc_cmd_mi.xml \
     vendor/xiaomi/rubens/proprietary/vendor/etc/elliptic_sensor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/elliptic_sensor.xml \
-    vendor/xiaomi/rubens/proprietary/vendor/etc/init/android.hardware.security.keymint-service.beanpod.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service.beanpod.rc \
     vendor/xiaomi/rubens/proprietary/vendor/etc/init/camerahalserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camerahalserver.rc \
-    vendor/xiaomi/rubens/proprietary/vendor/etc/init/microtrust.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/microtrust.rc \
-    vendor/xiaomi/rubens/proprietary/vendor/etc/init/vendor.microtrust.hardware.se@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.microtrust.hardware.se@1.0-service.rc \
     vendor/xiaomi/rubens/proprietary/vendor/etc/init/vendor.microtrust.hardware.soter@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.microtrust.hardware.soter@1.0-service.rc \
-    vendor/xiaomi/rubens/proprietary/vendor/etc/init/vendor.microtrust.hardware.thh@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.microtrust.hardware.thh@2.0-service.rc \
     vendor/xiaomi/rubens/proprietary/vendor/etc/init/vendor.xiaomi.hardware.mfidoca@1.0-iseeservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.mfidoca@1.0-iseeservice.rc \
-    vendor/xiaomi/rubens/proprietary/vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-iseeservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.mlipay@1.1-iseeservice.rc \
-    vendor/xiaomi/rubens/proprietary/vendor/etc/init/vendor.xiaomi.hardware.mtdservice@1.3-iseeservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.mtdservice@1.3-iseeservice.rc \
     vendor/xiaomi/rubens/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
     vendor/xiaomi/rubens/proprietary/vendor/etc/libnfc-nxp-pnscr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp-pnscr.conf \
     vendor/xiaomi/rubens/proprietary/vendor/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
@@ -399,14 +393,12 @@ PRODUCT_PACKAGES += \
     audio.primary.mediatek \
     fingerprint.fpc.default \
     fingerprint.goodix.default \
-    gatekeeper.beanpod \
     android.hardware.camera.provider@2.6-impl-mediatek \
     vendor.mediatek.hardware.camera.atms@1.0-impl \
     vendor.mediatek.hardware.camera.bgservice@1.1-impl \
     sensors.elliptic@2.0 \
     sensors.mediatek.V2.0 \
     vendor.mediatek.hardware.camera.isphal@1.1-impl \
-    jcos_nq_client-v1 \
     lib3a.ae.pipe \
     lib3a.cculog \
     libAITrackingAFMgr \
@@ -414,7 +406,6 @@ PRODUCT_PACKAGES += \
     libBasicModule \
     libOpenCL \
     libSQLiteModule_VER_ALL \
-    libTEECommon \
     libaaa_gma \
     libacdk \
     libai_pq \
@@ -469,11 +460,8 @@ PRODUCT_PACKAGES += \
     libgf_hal \
     libgoodixhwfingerprint \
     libgpudataproducer \
-    libgz_gp_client \
-    libgz_uree \
     libheichal \
     libimagebuffer_wrapper \
-    libimsg_log \
     libmdla_ut \
     libmfido_isee \
     libmiStereoFactoryRemapBasicLib \
@@ -491,29 +479,17 @@ PRODUCT_PACKAGES += \
     libminiui \
     libmisound \
     libmisoundcrossfade \
-    libmlipay_isee \
-    libmlipay_isee@1.1 \
     libmpbase \
-    libmt_isee \
-    libmt_isee@1.3 \
     libmtkcam_3rdcalibration \
     libmtkcam_fdWarpConvert \
     libmtkcam_thirdparty.customzone \
     libmtkisp_metadata_v2 \
     libnotifyaudiohal \
-    liboemcrypto \
     libpixelflinger \
     librelight_only \
     libremosaic_wrapper \
     libremosaiclib \
     librgbwlightsensor \
-    libteeclientjni_isee \
-    libteeclientjni_isee@1.1 \
-    libteei_daemon_vfs \
-    libthha \
-    libthhclient \
-    libtlcWidevineModularDrm \
-    liburee_meta_drmkeyinstall \
     libvideofilter_only \
     libvidhance \
     libvidhance_active_ois \
@@ -526,14 +502,9 @@ PRODUCT_PACKAGES += \
     libvidhance_super_stabilization \
     libvpu \
     libvpu5 \
-    libwa_depth \
-    libwa_refocus \
     libwa_rtdof \
     libwa_rtrefocus \
     libwa_widelens_undistort \
-    libwvkeybox \
-    ls_nq_client-v1 \
-    libwvdrmengine \
     lib3a.ae.core \
     lib3a.ae \
     lib3a.af.assist.models1d \
@@ -818,8 +789,6 @@ PRODUCT_PACKAGES += \
     rubensimx596_mipi_raw_tuning \
     rubenss5k4h7_mipi_raw_IdxMgr \
     rubenss5k4h7_mipi_raw_tuning \
-    se_nq_extn_client-v1 \
-    secure_element-impl \
     vendor.mediatek.hardware.camera.atms@1.0 \
     vendor.mediatek.hardware.camera.bgservice@1.0 \
     vendor.mediatek.hardware.camera.bgservice@1.1 \
@@ -831,27 +800,15 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.camera.postproc@1.0 \
     vendor.mediatek.hardware.camera.security@1.0 \
     vendor.microtrust.hardware.soter@1.0 \
-    vendor.microtrust.hardware.thh@2.0 \
-    wechat.beanpod \
     MipayService \
     SoterService \
-    android.hardware.security.keymint-service.beanpod.xml \
-    android.hardware.security.secureclock-service.beanpod.xml \
-    android.hardware.security.sharedsecret-service.beanpod.xml \
-    manifest.microtrust.xml \
     manifest_wechat.xml \
     batterysecret \
     ISP_param.db \
     fidoca_isee \
-    android.hardware.security.keymint@1.0-service.beanpod \
     camerahalserver \
-    vendor.microtrust.hardware.se@1.0-service \
     vendor.microtrust.hardware.soter@1.0-service \
-    vendor.microtrust.hardware.thh@2.0-service \
-    mi_thermald \
-    mlipayd_isee@1.1 \
-    mtd_isee@1.3 \
-    teei_daemon
+    mi_thermald
 
 PRODUCT_PACKAGES += \
     vendor_bin_crossbuild_DataSet_SQLiteModule_db_ae_ParameterDB_ae_db \
