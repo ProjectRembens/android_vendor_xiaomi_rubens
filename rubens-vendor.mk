@@ -112,8 +112,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rubens/proprietary/vendor/etc/dsi_m11r_38_0a_0a_dsc_cmd_mi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dsi_m11r_38_0a_0a_dsc_cmd_mi.xml \
     vendor/xiaomi/rubens/proprietary/vendor/etc/elliptic_sensor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/elliptic_sensor.xml \
     vendor/xiaomi/rubens/proprietary/vendor/etc/init/camerahalserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camerahalserver.rc \
-    vendor/xiaomi/rubens/proprietary/vendor/etc/init/vendor.microtrust.hardware.soter@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.microtrust.hardware.soter@1.0-service.rc \
-    vendor/xiaomi/rubens/proprietary/vendor/etc/init/vendor.xiaomi.hardware.mfidoca@1.0-iseeservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.mfidoca@1.0-iseeservice.rc \
     vendor/xiaomi/rubens/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
     vendor/xiaomi/rubens/proprietary/vendor/etc/libnfc-nxp-pnscr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp-pnscr.conf \
     vendor/xiaomi/rubens/proprietary/vendor/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
@@ -463,7 +461,6 @@ PRODUCT_PACKAGES += \
     libheichal \
     libimagebuffer_wrapper \
     libmdla_ut \
-    libmfido_isee \
     libmiStereoFactoryRemapBasicLib \
     libmiStereoFactoryRemapLib \
     libmiai_deblur \
@@ -799,15 +796,10 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.camera.isphal@1.1 \
     vendor.mediatek.hardware.camera.postproc@1.0 \
     vendor.mediatek.hardware.camera.security@1.0 \
-    vendor.microtrust.hardware.soter@1.0 \
     MipayService \
-    SoterService \
-    manifest_wechat.xml \
     batterysecret \
     ISP_param.db \
-    fidoca_isee \
     camerahalserver \
-    vendor.microtrust.hardware.soter@1.0-service \
     mi_thermald
 
 PRODUCT_PACKAGES += \

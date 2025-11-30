@@ -2560,38 +2560,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libmfido_isee",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libmfido_isee.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libhidlbase",
-                "libhidltransport",
-                "libutils",
-                "libcutils",
-                "libhardware",
-                "vendor.xiaomi.hardware.mfidoca@1.0",
-                "libTEECommon",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libmiStereoFactoryRemapBasicLib",
     owner: "xiaomi",
     strip: {
@@ -13997,34 +13965,6 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
-    name: "vendor.microtrust.hardware.soter@1.0",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.microtrust.hardware.soter@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
 android_app_import {
     name: "MipayService",
     owner: "xiaomi",
@@ -14033,26 +13973,6 @@ android_app_import {
     dex_preopt: {
         enabled: false,
     },
-    soc_specific: true,
-}
-
-android_app_import {
-    name: "SoterService",
-    owner: "xiaomi",
-    apk: "proprietary/vendor/app/SoterService/SoterService.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
-    name: "manifest_wechat.xml",
-    owner: "xiaomi",
-    src: "proprietary/vendor/etc/vintf/manifest/manifest_wechat.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
     soc_specific: true,
 }
 
@@ -14094,39 +14014,6 @@ sh_binary {
     src: "proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/default_sensor/mt6895/ISP_param.db",
     filename: "ISP_param.db",
     sub_dir: "crossbuild/DataSet/SQLiteModule/db/tuning_DB/default_sensor/mt6895",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "fidoca_isee",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/fidoca_isee",
-            ],
-            shared_libs: [
-                "liblog",
-                "libhidlbase",
-                "libhidltransport",
-                "libutils",
-                "libcutils",
-                "libhardware",
-                "vendor.xiaomi.hardware.mfidoca@1.0",
-                "libTEECommon",
-                "libmfido_isee",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
     soc_specific: true,
 }
 
@@ -14178,42 +14065,6 @@ cc_prebuilt_binary {
     },
     prefer: true,
     relative_install_path: "hw/mt6895",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "vendor.microtrust.hardware.soter@1.0-service",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/vendor.microtrust.hardware.soter@1.0-service",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libbase",
-                "libutils",
-                "libhardware",
-                "libhidlbase",
-                "vendor.microtrust.hardware.soter@1.0",
-                "libTEECommon",
-                "libssl",
-                "wechat.beanpod",
-                "libcrypto",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
     soc_specific: true,
 }
 
