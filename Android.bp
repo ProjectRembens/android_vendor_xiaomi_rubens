@@ -3617,6 +3617,59 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libwa_depth",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libwa_depth.so",
+            ],
+            shared_libs: [
+                "libanc_dc_base",
+                "libz",
+                "libdl",
+                "libm",
+                "liblog",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libwa_refocus",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libwa_refocus.so",
+            ],
+            shared_libs: [
+                "libz",
+                "libdl",
+                "libm",
+                "liblog",
+                "libEGL",
+                "libGLESv3",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libwa_rtdof",
     owner: "xiaomi",
     strip: {
@@ -5262,6 +5315,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/mt6895/libcam.hal3a.ctrl.so",
             ],
             shared_libs: [
+                "libprocessgroup_shim",
                 "libmtkcam_tuning_utils",
                 "libmtkcam_metadata",
                 "libmtkcam_metastore",
@@ -5536,6 +5590,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/mt6895/libcam.hal3a.so",
             ],
             shared_libs: [
+                "libprocessgroup_shim",
                 "lib3a.awbsync",
                 "lib3a.ae",
                 "libcam.halisp.TuningDataProvider",
@@ -12490,6 +12545,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/mt6895/libmtkcam_request_requlator.so",
             ],
             shared_libs: [
+                "libprocessgroup_shim",
                 "liblog",
                 "libmtkcam_ulog",
                 "libmtkcam_debugutils",
@@ -13962,17 +14018,6 @@ cc_prebuilt_library_shared {
     },
     compile_multilib: "64",
     prefer: true,
-    soc_specific: true,
-}
-
-android_app_import {
-    name: "MipayService",
-    owner: "xiaomi",
-    apk: "proprietary/vendor/app/MipayService/MipayService.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
     soc_specific: true,
 }
 

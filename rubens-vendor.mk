@@ -499,6 +499,8 @@ PRODUCT_PACKAGES += \
     libvidhance_super_stabilization \
     libvpu \
     libvpu5 \
+    libwa_depth \
+    libwa_refocus \
     libwa_rtdof \
     libwa_rtrefocus \
     libwa_widelens_undistort \
@@ -796,7 +798,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.camera.isphal@1.1 \
     vendor.mediatek.hardware.camera.postproc@1.0 \
     vendor.mediatek.hardware.camera.security@1.0 \
-    MipayService \
     batterysecret \
     ISP_param.db \
     camerahalserver \
