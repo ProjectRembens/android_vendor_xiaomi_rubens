@@ -117,6 +117,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rubens/proprietary/vendor/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
     vendor/xiaomi/rubens/proprietary/vendor/etc/misound_res_headphone.bin:$(TARGET_COPY_OUT_VENDOR)/etc/misound_res_headphone.bin \
     vendor/xiaomi/rubens/proprietary/vendor/etc/misound_res_spk.bin:$(TARGET_COPY_OUT_VENDOR)/etc/misound_res_spk.bin \
+    vendor/xiaomi/rubens/proprietary/vendor/etc/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
     vendor/xiaomi/rubens/proprietary/vendor/etc/smartpa_param/tfa98xx_device.bin:$(TARGET_COPY_OUT_VENDOR)/etc/smartpa_param/tfa98xx_device.bin \
     vendor/xiaomi/rubens/proprietary/vendor/etc/smartpa_param/tfa98xx_ringtone.bin:$(TARGET_COPY_OUT_VENDOR)/etc/smartpa_param/tfa98xx_ringtone.bin \
     vendor/xiaomi/rubens/proprietary/vendor/etc/smartpa_param/tfa98xx_voice.bin:$(TARGET_COPY_OUT_VENDOR)/etc/smartpa_param/tfa98xx_voice.bin \
