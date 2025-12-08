@@ -109,9 +109,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rubens/proprietary/vendor/etc/cust_color.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cust_color.xml \
     vendor/xiaomi/rubens/proprietary/vendor/etc/cust_silky_brightness.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cust_silky_brightness.xml \
     vendor/xiaomi/rubens/proprietary/vendor/etc/dsi_l11a_38_0a_0a_dsc_cmd_mi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dsi_l11a_38_0a_0a_dsc_cmd_mi.xml \
-    vendor/xiaomi/rubens/proprietary/vendor/etc/dsi_m11r_38_0a_0a_dsc_cmd_mi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dsi_m11r_38_0a_0a_dsc_cmd_mi.xml \
     vendor/xiaomi/rubens/proprietary/vendor/etc/elliptic_sensor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/elliptic_sensor.xml \
     vendor/xiaomi/rubens/proprietary/vendor/etc/init/camerahalserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camerahalserver.rc \
+    vendor/xiaomi/rubens/proprietary/vendor/etc/init/rubens_display.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/rubens_display.rc \
     vendor/xiaomi/rubens/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
     vendor/xiaomi/rubens/proprietary/vendor/etc/libnfc-nxp-pnscr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp-pnscr.conf \
     vendor/xiaomi/rubens/proprietary/vendor/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
@@ -841,6 +841,8 @@ PRODUCT_PACKAGES += \
     vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_rubenss5k4h7_mipi_raw_ISP_param_db \
     vendor_bin_hw_camerahalserver \
     vendor_etc_camera_gma_custom_xml \
+    vendor_etc_dsi_m11r_38_0a_0a_dsc_cmd_mi_xml \
+    vendor_etc_init_rembrandt_display_rc \
     vendor_lib64_hw_audio_primary_mt6895_so \
     vendor_lib64_hw_android_hardware_camera_provider@2_6-impl-mediatek_so \
     vendor_lib64_hw_vendor_mediatek_hardware_camera_atms@1_0-impl_so \
